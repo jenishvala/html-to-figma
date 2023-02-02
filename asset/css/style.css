@@ -10,10 +10,57 @@ body {
 }
 .head {
   background: #74c69d;
-  color: #fff !important;
+  color: #fff;
 }
-.navbar-toggler:focus {
-  box-shadow: none !important;
+
+.navbar-toggler {
+  border: 0;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+
+.navbar-toggler-icon {
+  width: 24px;
+  height: 3px;
+  background: #fff;
+  display: block;
+  background-image: none;
+}
+
+.navbar-toggler.collapsed .top-bar {
+  margin-top: 5px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middel-bar {
+  margin-top: 5px;
+  height: 3px;
+  transform: rotate(0deg);
+  opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  margin-top: 5px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler .top-bar {
+  margin-top: 0px;
+  transform: rotate(135deg);
+}
+.navbar-toggler .middel-bar {
+  opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+  margin-top: -5px;
+  transform: rotate(-135deg);
 }
 .f-2 {
   font-weight: 400;
@@ -21,22 +68,27 @@ body {
   line-height: 25px;
 }
 h6 {
-  font-weight: 700 !important;
-  font-size: 16px !important;
+  font-weight: 700;
+  font-size: 16px;
   letter-spacing: 5px;
-  margin-bottom: 15px !important;
+  margin-bottom: 15px;
 }
 .card {
   border: none !important;
 }
 .navbar-toggler-icon {
-  color: #fff !important;
+  color: #fff;
 }
 h1 {
   font-weight: 700 !important;
   font-size: 40px !important;
   margin-bottom: 16px !important;
   font-family: "Crimson Text", serif !important;
+}
+.dolar {
+  font-weight: 700 !important;
+  font-size: 40px !important;
+  font-family: "Poppins", sans-serif !important;
 }
 p {
   font-weight: 400;
@@ -60,7 +112,7 @@ p {
 .icon {
   margin-top: 45px !important;
 }
-.page{
+.page {
   margin-top: 20px;
 }
 .man {
@@ -108,8 +160,11 @@ textarea {
 }
 .Explore {
   padding: 13px 48px 10px !important;
+  font-size: 20px;
 }
-
+.footer {
+  margin-top: 92px;
+}
 @media (max-width: 576px) {
   .logo {
     width: 129px;
@@ -117,7 +172,9 @@ textarea {
   .wel-card {
     padding: 0px 20px !important;
   }
-
+  .nav {
+    top: 17px;
+  }
   h1 {
     font-size: 24px !important;
     margin-top: 10px !important;
@@ -136,15 +193,25 @@ textarea {
   }
   .text-order {
     order: 1;
-    margin-top: 10px !important;
+    margin-top: 10px;
   }
   .id-card {
-    padding: 17px 48px !important;
+    padding: 17px 48px;
   }
   .service-footer {
-    margin-top: 60px !important;
+    margin-top: 60px;
   }
   .serve {
     margin-bottom: 50px;
+  }
+  .head {
+    position: relative;
+  }
+  .dropdown {
+    position: absolute;
+    top: 55px;
+  }
+  .footer {
+    margin-top: 60px;
   }
 }
