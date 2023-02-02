@@ -12,16 +12,22 @@ body {
   background: #74c69d;
   color: #fff !important;
 }
-
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
 .f-2 {
   font-weight: 400;
   font-size: 20px;
-  /* line-height: 25px; */
+  line-height: 25px;
 }
 h6 {
   font-weight: 700 !important;
   font-size: 16px !important;
   letter-spacing: 5px;
+  margin-bottom: 15px !important;
+}
+.card {
+  border: none !important;
 }
 .navbar-toggler-icon {
   color: #fff !important;
@@ -29,15 +35,13 @@ h6 {
 h1 {
   font-weight: 700 !important;
   font-size: 40px !important;
+  margin-bottom: 16px !important;
   font-family: "Crimson Text", serif !important;
-}
-.folin {
-  font-weight: 700 !important;
-  font-size: 40px !important;
 }
 p {
   font-weight: 400;
   font-size: 15px;
+  line-height: 19px;
   color: rgba(255, 255, 255, 0.75);
 }
 .disc {
@@ -53,19 +57,23 @@ p {
   line-height: 30px;
   font-family: "Crimson Text", serif !important;
 }
-.profile {
-  padding: 0px 30px;
+.icon {
+  margin-top: 45px !important;
+}
+.page{
+  margin-top: 20px;
 }
 .man {
   box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
+  padding: 19px 25px;
 }
 footer {
   background-color: #74c69d;
-  margin-top: 30px !important;
+  margin-top: 30px;
 }
 .social a {
-  color: #fff !important;
+  color: #fff;
   margin-right: 10px;
 }
 .bit {
@@ -74,18 +82,18 @@ footer {
   color: rgba(33, 37, 41, 0.5);
 }
 .services-card {
-  padding: 46px 30px 46px 30px !important;
+  padding: 46px 30px;
   box-shadow: 3px 4px 12px 1px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
 .service-footer {
-  margin-top: 130px !important;
+  margin-top: 130px;
 }
 .form,
 textarea {
   background: #eeeeee !important;
   border: 1px solid #000000 !important;
-  border-radius: 5px !important;
+  border-radius: 5px;
 }
 
 .form-control:focus {
@@ -95,11 +103,21 @@ textarea {
   outline: 0;
   box-shadow: none !important;
 }
+.btn {
+  padding: 13px 29px 10px !important;
+}
+.Explore {
+  padding: 13px 48px 10px !important;
+}
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
   .logo {
     width: 129px;
   }
+  .wel-card {
+    padding: 0px 20px !important;
+  }
+
   h1 {
     font-size: 24px !important;
     margin-top: 10px !important;
@@ -107,8 +125,11 @@ textarea {
   .priority {
     order: 0;
   }
+  .man {
+    padding: 19px 38px;
+  }
   .img {
-    padding: 15px !important;
+    padding: 50px 20px 30px !important;
   }
   .heading {
     font-size: 28px !important;
@@ -118,9 +139,12 @@ textarea {
     margin-top: 10px !important;
   }
   .id-card {
-    padding: 0px 70px !important;
+    padding: 17px 48px !important;
   }
   .service-footer {
     margin-top: 60px !important;
+  }
+  .serve {
+    margin-bottom: 50px;
   }
 }
